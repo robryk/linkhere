@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Link Here",
+	"description": "Creates a context menu entry for generating a link to a given place on a page",
+	"permissions": [
+		"contextMenus"
+	],
+	"background": {
+		"page": "background.html",
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"],
+			"js": ["content.js"]
+		}
+	],
+	"version": "1.0"
+
+}
